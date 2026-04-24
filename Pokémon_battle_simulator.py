@@ -4,7 +4,7 @@ import os
 pikachu_initial_hp=80
 squirtle_initial_hp=90
 
-hp_bar=20
+hp_bar=10
 
 
 pikachu_hp=pikachu_initial_hp
@@ -36,6 +36,7 @@ while pikachu_hp>0 and squirtle_hp>0:
         #Thunder Wave
         print("The foe's PIKACHU used Thunder Wave")
         squirtle_hp = max(squirtle_hp - 12, 0)
+
 
     filled = int(squirtle_hp / squirtle_initial_hp * hp_bar)
     filled2 = int(pikachu_hp / pikachu_initial_hp * hp_bar)
